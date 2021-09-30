@@ -105,7 +105,7 @@ let tebakbendera = [];
 let tebakanime = [];
 ctc = '›'
 shp = '🌹'
-fake = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Restaシ︎'  
+fake = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 Ghoskyyシ︎'  
 baterai = {
     baterai: 0,
     cas: false 
@@ -118,9 +118,9 @@ let {
 /******************************* Data Basenya taruh sni jadi biar detec dluan******************************/
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Resta シ︎\n'
-            + 'ORG:Owner Resta;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6283853152230:+6283853152230\n'
+            + 'FN:Wisnuシ︎\n'
+            + 'ORG:Owner Ghosky;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6289653381067:+6289653381067\n'
             + 'END:VCARD'
 //******************** 》Vcard《 ********************\\
     const sleep = async (ms) => {
@@ -607,8 +607,8 @@ family100.splice(game.getfamposi(from, family100), 1)
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
 				const json = {	
-				"sticker-pack-name": packname,
-				"sticker-pack-publisher": author,
+				"sticker-pack-name": by Ghosky bid,
+				"sticker-pack-publisher": @iamghosky_,
 				}
 				const littleEndian = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])	
 				const bytes = [0x00, 0x00, 0x16, 0x00, 0x00, 0x00]	
@@ -1251,7 +1251,7 @@ ${shp} *Link :* ${res[0].link}
 /*****************************MENU SEARCH******************************/
                 
 //------------------< Math Random >-------------------
-		 case 'ganteng':
+		  case 'ganteng':
 					if (!isGroup)return reply(mess.only.group)
 					var kamu = groupMembers
 					var cinta = groupMembers
@@ -1334,6 +1334,15 @@ ${shp} *Link :* ${res[0].link}
                     if (!m.quoted.sender === Resta.user.jid) return reply(`Reply pesan dari bot`)
 				    Resta.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 				    break
+		case 'babi':
+					if (!isGroup)return reply(mess.only.group)
+					var aku = groupMembers
+					var anjing = groupMembers
+					var aku = cinta[Math.floor(Math.random() * aku.length)]
+					var cintax = kamu[Math.floor(Math.random() * anjing.length)]
+					let tejs = `Cowok paling babi di group ini adalah\n*@${aku.jid.split('@')[0]}*`
+					mentions(tejs, [aku.jid, cintax.jid], true)
+					break  
 /******************"************************SETTING GRUP*********/
                  case 'join':
                  case 'join':
